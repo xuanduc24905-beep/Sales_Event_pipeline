@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <property>
+    <name>javax.jdo.option.ConnectionURL</name>
+    <value>jdbc:derby:/home/hadoop/metastore_db;databaseName=metastore_db;create=true</value>
+  </property>
+  <property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+    <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+  </property>
+  <property>
+    <name>hive.metastore.warehouse.dir</name>
+    <value>hdfs://192.168.56.10:9000/user/hive/warehouse</value>
+  </property>
+  <property>
+    <name>hive.exec.scratchdir</name>
+    <value>hdfs://192.168.56.10:9000/tmp/hive</value>
+  </property>
+  <property>
+    <name>hive.metastore.uris</name>
+    <value>thrift://192.168.56.10:9083</value>
+  </property>
+  <property>
+    <name>hive.server2.thrift.port</name>
+    <value>10000</value>
+  </property>
+  <property>
+    <name>hive.server2.enable.doAs</name>
+    <value>false</value>
+  </property>
+</configuration>
